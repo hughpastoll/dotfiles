@@ -12,14 +12,11 @@ brew "rust"
 brew "rust-analyzer"
 brew "tmux"
 brew "tree"
-brew "zsh"
 cask "alacritty"
-cask "google-chrome"
 cask "mactex-no-gui"
 cask "onedrive"
 mas "AdBlock", id: 1402042596
 mas "Antivirus Zap - Virus Scanner", id: 1212019923
 mas "Graphic", id: 404705039
-mas "Honey", id: 1472777122
 mas "Microsoft Excel", id: 462058435
 mas "Pages", id: 409201541
