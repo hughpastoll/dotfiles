@@ -9,7 +9,7 @@
 ## Homebrew expects Brewfile to be in the home directory (Brewfile will have been
 ## created using the command 'brew bundle dump' to capture all installs). 
 #brew bundle
-#
+# Overwrite Brewfile: brew bundle dump --file=~/dotfiles/Brewfile --force
 ########### Fetch and organise dotfiles ###########
 # Make sure you're in the home directory
 cd ~/ 

@@ -11,10 +11,9 @@ brew "pandoc"
 brew "rust"
 brew "rust-analyzer"
 brew "tmux"
-brew "tree"
 cask "alacritty"
-cask "mactex-no-gui"
 cask "onedrive"
+cask "protonvpn"
 mas "AdBlock", id: 1402042596
 mas "Antivirus Zap - Virus Scanner", id: 1212019923
 mas "Graphic", id: 404705039
