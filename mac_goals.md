@@ -26,6 +26,10 @@ I want to have a script that configures mac OS to how a like it (so I don't have
 
 > defaults read-type com.apple.TextEdit CheckGrammarWithSpelling
 
+- find the domain with text-string that you are interested in:
+
+> defaults domains | tr ',' '\n' grep text-string
+
 
 ### Restore config files 
 
