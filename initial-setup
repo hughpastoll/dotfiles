@@ -11,7 +11,7 @@
 
 ############## Install homebrew ###########
 ## This will also install Xcode commandline tools without requiring confirmation
-#/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ############# Install *with* homebrew ##########
 # Use homebrew to install everything listed (bundled) in the Brewfile (in ~/)
