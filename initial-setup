@@ -17,10 +17,10 @@
 # Use homebrew to install everything listed (bundled) in the Brewfile (in ~/)
 brew bundle
 
-############# Change shell to bash #########
+############# Change default shell to bash #########
 # The latest bash installed by homebrew is different to the system bash (/bin/bash)
 # To switch to using the 'new' bash (symlink at /usr/local/bin/bash) you first have
-# to add it as a permissable shell appending it to the list of allowable shells in
+# to add it as a permissable shell by appending it to the list of allowable shells in
 # the /etc/shells file. /etc/shells is only editable as root (owned by root), so we
 # have to temporarily become root to do the editing. If this were at the terminal
 # we would use: 'sudo -i' then 'exit'. 
