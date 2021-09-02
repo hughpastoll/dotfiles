@@ -10,9 +10,12 @@ brew "neovim"
 brew "pandoc"
 brew "rust"
 brew "rust-analyzer"
+cask "firefox"
 cask "iterm2"
 cask "onedrive"
 cask "protonvpn"
+cask "sync"
+mas "LastPass", id: 926036361
 mas "AdBlock", id: 1402042596
 mas "Antivirus Zap - Virus Scanner", id: 1212019923
 mas "Graphic", id: 404705039
