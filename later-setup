@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+################## Create symlinks to dotfiles ###############
+# NB: Assumes that all dotfiles are in a ~/dotfiles directory
+
+# Todo: Check if files or symbolic link already exist
+
+# .bashrc file
+# ln -s ~/dotfiles/.bashrc ~/.bashrc  # sybolic link in home directory
+
+# init.vim file (config for neovim)
+# ln -s ~/dotfiles/init.vim ~/.config/nvim/init.vim  # where neovim expects it
+
+
