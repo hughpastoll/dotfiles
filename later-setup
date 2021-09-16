@@ -3,7 +3,12 @@
 ################## Create symlinks to dotfiles ###############
 # NB: Assumes that all dotfiles are in a ~/dotfiles directory
 
-# Todo: Check if files or symbolic link already exist
+# Todo: Check if files or symbolic links already exist
+
+# List of config files
+# .bashrc
+# init.vim
+
 
 # .bashrc file
 # ln -s ~/dotfiles/.bashrc ~/.bashrc  # sybolic link in home directory

@@ -9,19 +9,14 @@ Plug 'morhetz/gruvbox' " Colour scheme
 Plug 'junegunn/fzf' " Fuzzy search
 Plug 'tpope/vim-surround' " Delete/change surrounding characters
 Plug 'tpope/vim-commentary' " Enable toggle comments
+Plug 'vim-airline/vim-airline' " Adds configurable status bar
+Plug 'scrooloose/nerdtree' " Adds file navigator
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
 set number " Turns on line numbering
 set relativenumber " Turns on relative line numbering
 set splitbelow " To open completion previews below
-
-let mapleader = " " " map leader key to Space (default is '/')
-
-" Activate the colorscheme (note the US spelling) after specifying colorscheme
-" configs
-let g:gruvbox_contrast_dark = 'medium'
-colorscheme gruvbox
 
 syntax enable
 filetype plugin indent on
@@ -34,3 +29,13 @@ let g:ale_linters = {'rust': ['analyzer']}
 let g:ale_sign_column_always = 1
 let g:ale_fixers = {'rust': ['rustfmt']}
 let g:ale_completion_enabled = 1
+
+let mapleader = " " " map leader key to Space (default is '/')
+
+nnoremap <leader>n :NERDTreeFocus<CR> " Focus on Nerdtree
+nnoremap <leader>t :NERDTreeToggle<CR> " For hiding 
+
+" Activate the colorscheme (note the US spelling) after specifying colorscheme
+" configs
+let g:gruvbox_contrast_dark = 'medium'
+colorscheme gruvbox
