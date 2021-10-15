@@ -20,10 +20,13 @@ set splitbelow " To open completion previews below
 
 syntax enable
 filetype plugin indent on
+
 set tabstop=4 " show existing tabs as 4 spaces
 set shiftwidth=4 " using '>' indents 4 spaces
 set expandtab " pressing 'tab' inserts n=*tabstop* spaces
-set textwidth=80
+
+set textwidth=0 " Prevent new lines being triggered at character limit
+set colorcolumn=80 " Add visual cue for ideal character limit
 
 let g:ale_linters = {'rust': ['analyzer']}
 let g:ale_sign_column_always = 1
