@@ -3,10 +3,11 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " Declare the list of plugins.
 Plug 'rust-lang/rust.vim' " Rust syntax
-Plug 'dense-analysis/ale' " Multi language linting/analysis. d
+Plug 'dense-analysis/ale' " Multi language linting/analysis.
 Plug 'cespare/vim-toml' " Should be useful for rust .toml syntax
 Plug 'morhetz/gruvbox' " Colour scheme
-Plug 'junegunn/fzf' " Fuzzy search
+Plug 'junegunn/fzf' " Fuzzy search utility
+Plug 'junegunn/fzf.vim' " Vim specific fzf
 Plug 'tpope/vim-surround' " Delete/change surrounding characters
 Plug 'tpope/vim-commentary' " Enable toggle comments
 Plug 'vim-airline/vim-airline' " Adds configurable status bar
@@ -42,3 +43,6 @@ nnoremap <leader>t :NERDTreeToggle<CR> " For hiding
 " configs
 let g:gruvbox_contrast_dark = 'medium'
 colorscheme gruvbox
+
+" Printing options: (:hardcopy (:ha) > 'fileout.ps' to print to file)
+set printoptions=number:y " Add line numbers to output
