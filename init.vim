@@ -36,6 +36,7 @@ let g:ale_completion_enabled = 1
 
 let mapleader = " " " map leader key to Space (default is '/')
 
+" File browsing
 nnoremap <leader>n :NERDTreeFocus<CR> " Focus on Nerdtree
 nnoremap <leader>t :NERDTreeToggle<CR> " For hiding 
 
@@ -44,5 +45,22 @@ nnoremap <leader>t :NERDTreeToggle<CR> " For hiding
 let g:gruvbox_contrast_dark = 'medium'
 colorscheme gruvbox
 
+" Line visibility for more context
+set scrolloff=2
+
+" Code folding
+set foldmethod=syntax " =indent " Use 'za' on indented line to toggle
+set foldcolumn=2 " Shows lines with folds
+let g:xml_syntax_folding=1
+
 " Printing options: (:hardcopy (:ha) > 'fileout.ps' to print to file)
 set printoptions=number:y " Add line numbers to output
+
+" Enable mouse
+set mouse=a
+
+" Auto completion
+set completeopt=menuone,noinsert,noselect
+
+" Message display
+set cmdheight=2

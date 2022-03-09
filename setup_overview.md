@@ -1,8 +1,7 @@
 # Mac setup goals
 
-This document describes and explains the steps to take to restore the functionality of a mac computer to a
-particular desired state without retaining any data. to avoid having to manually customise OS settings,
-reinstall and configure applications.  
+This document records the steps to take to setup a mac computer to a specified state of functionality. 
+The aim is to automate the setup of OS settings and installation and configuration of applications.  
 
 ## Configure MacOS
 
@@ -10,7 +9,7 @@ reinstall and configure applications.
 
 I want to have a script that configures mac OS to how a like it (so I don't have to go into menus etc when I get a new machine). 
 
-- map the Capslock key to Esc. 
+- map the Capslock key to Esc (can't just remap toggle key in Vim itself).
 - need to use the 'defaults' CLI utility that manages all the settings (stored
   in various '.plist' files (in e.g. ~/Library/Preferences/ but also elsewhere).
   You need to use the 'defaults' utility because all the .plist files are binary
@@ -33,13 +32,7 @@ I want to have a script that configures mac OS to how a like it (so I don't have
 
 ### Restore config files 
 
-Use tmux (terminal multiplexing) - very helpful for programming
-$PATH (/etc...) 
-zsh config
-
-I want to set up a configuration of the zsh shell. See e.g. here: https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout
-## Restore complement of functionality
-
+First, enable 
 ### Restore applications
 
 I want to use homebrew to save and recreate as much of the state of the system as possible, captured in a Brewfile. For anything that can't be done this way I want a document that explicitly records what I have done and how to recreate it. Homebrew relies on Mac's Command Line Tools (usually bundled with XCode) to be installed. To install only the CL tools use:

@@ -249,5 +249,6 @@ defaults write com.apple.ActivityMonitor SortDirection -int 0
 # Specific Applications                                                       #
 ###############################################################################
 
-# Enable press and hold for VSCode specifically
+# Enable press and hold for VSCode/VSCodium specifically
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false

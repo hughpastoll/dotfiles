@@ -15,10 +15,13 @@ brew "neovim"
 brew "pandoc"
 brew "r"
 brew "rust-analyzer"
+brew "rustup-init"
 brew "mongodb/brew/mongodb-community"
 cask "1password"
 cask "basictex"
+cask "drawio"
 cask "firefox"
+cask "flutter"
 cask "iterm2"
 cask "mongodb-compass"
 cask "onedrive"
@@ -27,12 +30,12 @@ cask "protonvpn"
 cask "qgis"
 cask "rstudio"
 cask "sync"
-cask "visual-studio-code"
+cask "via"
+cask "vscodium"
 mas "AdBlock", id: 1402042596
 mas "Antivirus Zap - Virus Scanner", id: 1212019923
 mas "GoodNotes", id: 1444383602
 mas "Graphic", id: 404705039
 mas "iCircuit", id: 454347770
 mas "LastPass", id: 926036361
-mas "Microsoft Excel", id: 462058435
 mas "Pages", id: 409201541
