@@ -12,10 +12,11 @@
 
 
 # .bashrc file
-# ln -s ~/dotfiles/.bashrc ~/.bashrc  # sybolic link in home directory
+ln -s ~/dotfiles/.bashrc ~/.bashrc  # sybolic link in home directory
 
 # init.vim file (config for neovim)
-# ln -s ~/dotfiles/init.vim ~/.config/nvim/init.vim  # where neovim expects it
+mkdir -p ~/.config/nvim/  # ensure directory exists
+ln -s ~/dotfiles/init.vim ~/.config/nvim/init.vim  # where neovim expects it
 
 # Brewfile (config for setup only)
 
