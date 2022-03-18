@@ -1,0 +1,43 @@
+#!/bin/bash
+
+# Note 1: Passwords:
+# You need to be signed into the mac app store on your local machine
+# and you will also be prompted to enter your password several times.
+
+# Note 2: Prerequisites:
+# You will need to have manually put a Brewfile in your home directory
+# since you will not have git on the machine to clone it from a remote
+# repository 
+
+############## Install homebrew ###########
+## This will also install Xcode commandline tools without requiring confirmation
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+############# Add homebrew to path #########
+# Only required for Apple Silicon - on Intel the installation location is already
+# on the path by default.
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/hugh/.profile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+############# Install *with* homebrew ##########
+# Use homebrew to install everything listed (bundled) in the Brewfile (in ~/)
+brew bundle
+
+############# Change default shell to bash #########
+# The latest bash installed by homebrew is different to the system bash (/bin/bash)
+# To switch to using the 'new' bash (symlink at /opt/homebrew/bin/bash) you first have
+# to add it as a permissable shell by appending it to the list of allowable shells in
+# the /etc/shells file. /etc/shells is only editable as root (owned by root), so we
+# have to temporarily become root to do the editing. If this were at the terminal
+# we would use: 'sudo -i' then 'exit'. 
+
+# Only uncomment this EOF block if this is the first time running the script
+# on a clean MacOS install - otherwise you'll end up with duplicate lines in /etc/shells
+sudo -i << EOF # Feed root everything up to the next instance of the specified delimiter 
+echo "/opt/homebrew/bin/bash" >> /etc/shells
+EOF
+# Note the EOF delimiter has to be on its own line with no in-line comments
+
+# Will have to restart your terminal for the change of shell to take effect. Note 
+# that the form of the command prompt will change. 
+chsh -s /opt/homebrew/bin/bash
