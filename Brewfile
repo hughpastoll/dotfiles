@@ -4,8 +4,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "mongodb/brew"
 brew "bash"
-brew "python@3.9"
-brew "glib"
 brew "fzf"
 brew "git"
 brew "mas"
@@ -19,7 +17,6 @@ brew "rustup-init"
 brew "mongodb/brew/mongodb-community"
 cask "1password"
 cask "basictex"
-cask "drawio"
 cask "firefox"
 cask "flutter"
 cask "iterm2"
@@ -31,11 +28,5 @@ cask "qgis"
 cask "rstudio"
 cask "sync"
 cask "via"
-cask "vscodium"
-mas "AdBlock", id: 1402042596
 mas "Antivirus Zap - Virus Scanner", id: 1212019923
-mas "GoodNotes", id: 1444383602
 mas "Graphic", id: 404705039
-mas "iCircuit", id: 454347770
-mas "LastPass", id: 926036361
-mas "Pages", id: 409201541

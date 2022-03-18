@@ -8,6 +8,7 @@
 # List of config files
 # .bashrc
 # init.vim
+# Brewfile
 
 
 # .bashrc file
@@ -15,5 +16,7 @@
 
 # init.vim file (config for neovim)
 # ln -s ~/dotfiles/init.vim ~/.config/nvim/init.vim  # where neovim expects it
+
+# Brewfile (config for setup only)
 
 
