@@ -15,8 +15,8 @@
 
 ############# Add homebrew to path #########
 # Only required for Apple Silicon - on Intel the installation location is already
-# on the path by default.
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/hugh/.profile
+# on the path by default. Adds homebrew and all its installed applications to the PATH.
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.profile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ############# Install *with* homebrew ##########
